@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Resume - SADEV</title>
+  <meta name="description" content="Resume of Saad Mosaif, Future Computer Engineer specializing in MIAGE and AI">
+  <meta name="keywords" content="resume, computer engineer, AI, MIAGE, web development">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Additional interactive styles */
+    .interactive-card {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .interactive-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .skill-bar {
+      height: 10px;
+      background-color: #e9ecef;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    .skill-progress {
+      height: 100%;
+      border-radius: 5px;
+      background: linear-gradient(90deg, #3498db, #6a5acd);
+      width: 0;
+      transition: width 1s ease-in-out;
+    }
+    .tech-tag {
+      display: inline-block;
+      padding: 3px 8px;
+      background-color: #f0f0f0;
+      border-radius: 15px;
+      margin: 2px;
+      font-size: 0.8rem;
+      transition: all 0.3s ease;
+    }
+    .tech-tag:hover {
+      background-color: #3498db;
+      color: white;
+      transform: scale(1.05);
+    }
+    .timeline-item {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 30px;
+    }
+    .timeline-item:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #3498db;
+    }
+    .timeline-item:after {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 20px;
+      bottom: -30px;
+      width: 1px;
+      background-color: #dee2e6;
+    }
+    .timeline-item:last-child:after {
+      display: none;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #3498db, #6a5acd);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .tab-button {
+      transition: all 0.3s ease;
+    }
+    .tab-button.active {
+      background-color: #3498db;
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="resume-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">SaDev</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html" class="active">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://github.com/Saad-Mosaif" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://ma.linkedin.com/in/saad-mosaif" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Future computer engineer specializing in <span class="gradient-text">MIAGE</span> and <span class="gradient-text">artificial intelligence</span></p>
+        <div class="d-flex justify-content-center mt-3">
+          <button id="download-resume" class="btn btn-primary">
+            <i class="bi bi-download me-2"></i>Download PDF
+          </button>
+        </div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0 interactive-card" onclick="toggleExpand(this)">
+              <h4>Saad Mosaif</h4>
+              <p><em>Future computer engineer, specializing in MIAGE and holder of a double degree in artificial intelligence. Passionate about designing and developing innovative software solutions, I am motivated by creating tools with high added value. With expertise in programming, system architecture and artificial intelligence, I am looking for a final year internship where I can put my skills at the service of ambitious and transformative projects.</em></p>
+              <div class="expandable-content" style="display: none;">
+                <ul>
+                  <li><i class="bi bi-geo-alt-fill me-2"></i>Casablanca, Sidi Maarouf, Rue 100</li>
+                  <li><i class="bi bi-telephone-fill me-2"></i>+212 607088006</li>
+                  <li><i class="bi bi-envelope-fill me-2"></i>saadmosaif.pro@gmail.com</li>
+                </ul>
+                <div class="mt-3">
+                  <div class="d-flex justify-content-around">
+                    <a href="https://github.com/Saad-Mosaif" class="btn btn-outline-dark btn-sm">
+                      <i class="bi bi-github me-1"></i> GitHub
+                    </a>
+                    <a href="https://ma.linkedin.com/in/saad-mosaif" class="btn btn-outline-primary btn-sm">
+                      <i class="bi bi-linkedin me-1"></i> LinkedIn
+                    </a>
+                    <a href="mailto:saadmosaif.pro@gmail.com" class="btn btn-outline-danger btn-sm">
+                      <i class="bi bi-envelope me-1"></i> Email
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item interactive-card" onclick="toggleExpand(this)">
+              <h4>Master: Applied Artificial Intelligence</h4>
+              <h5>2025</h5>
+              <p><em>Université Côte d'Azur</em></p>
+              <div class="expandable-content" style="display: none;">
+                <p>Specialized courses in:</p>
+                <ul>
+                  <li>Machine Learning Algorithms</li>
+                  <li>Deep Learning Architectures</li>
+                  <li>Natural Language Processing</li>
+                  <li>Computer Vision</li>
+                </ul>
+              </div>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item interactive-card" onclick="toggleExpand(this)">
+              <h4>Engineering Cycle: Computer Science, MIAGE option</h4>
+              <h5>2025</h5>
+              <p><em>EMSI</em></p>
+              <div class="expandable-content" style="display: none;">
+                <p>Key achievements:</p>
+                <ul>
+                  <li>GPA: 3.8/4.0</li>
+                  <li>Dean's List for academic excellence</li>
+                  <li>Lead developer for student portal project</li>
+                </ul>
+              </div>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item interactive-card" onclick="toggleExpand(this)">
+              <h4>Baccalaureate: Physical Sciences</h4>
+              <h5>2020</h5>
+              <p><em>Lycée Yassamine, Californie</em></p>
+              <div class="expandable-content" style="display: none;">
+                <ul>
+                  <li>Graduated with honors</li>
+                  <li>Mathematics and Physics specialization</li>
+                </ul>
+              </div>
+            </div><!-- End Resume Item -->
+
+            <h3 class="resume-title">Skills</h3>
+            <div class="resume-item interactive-card">
+              <div class="mb-3">
+                <h5>Soft Skills</h5>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95"></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <h5>Technical Skills</h5>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+              </div>
+              
+              <div class="expandable-content">
+                <ul>
+                  <li>Problem Solving and Critical Thinking</li>
+                  <li>Leadership</li>
+                  <li>Effective Communication</li>
+                  <li>Project Management</li>
+                  <li>Adaptability and Stress Management</li>
+                </ul>
+              </div>
+            </div><!-- End Resume Item -->
+
+            <h3 class="resume-title">Languages</h3>
+            <div class="resume-item interactive-card">
+              <div class="mb-3">
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95"></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="100"></div>
+                </div>
+              </div>
+              <div class="expandable-content">
+                <ul>
+                  <li>English (fluent)</li>
+                  <li>French (fluent)</li>
+                  <li>Arabic (native)</li>
+                </ul>
+              </div>
+            </div><!-- End Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            
+            <div class="resume-item interactive-card" onclick="toggleExpand(this)">
+              <h4>Full-Stack Developer Intern</h4>
+              <h5>03/2025 - 07/2025</h5>
+              <p><em>Marsa Maroc</em></p>
+              <div class="expandable-content" style="display: none;">
+                <ul>
+                  <li>Designed and developed a maritime stopover management web application using Angular 19 and Spring Boot 3.2</li>
+                  <li>Implemented real-time vessel tracking and automated scheduling algorithms</li>
+                  <li>Integrated with port authority APIs and AIS tracking systems</li>
+                  <li>Reduced port operation delays by 23% through optimized scheduling</li>
+                  <li>Mentored junior developers in modern web development practices</li>
+                </ul>
+                <div class="mt-2">
+                  <span class="tech-tag">Angular 19</span>
+                  <span class="tech-tag">Spring Boot 3.2</span>
+                  <span class="tech-tag">WebSockets</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">Kubernetes</span>
+                </div>
+                <button class="btn btn-sm btn-outline-primary mt-2" onclick="event.stopPropagation();showProjectDetails('marsa-maroc')">
+                  View Project Details
+                </button>
+              </div>
+            </div>
+            
+            <div class="resume-item interactive-card" onclick="toggleExpand(this)">
+              <h4>Web Application Developer Intern</h4>
+              <h5>07/2024 - 09/2024</h5>
+              <p><em>OFPPT</em></p>
+              <div class="expandable-content" style="display: none;">
+                <ul>
+                  <li>Design and development of a web application using Spring Boot for the backend and React for the frontend</li>
+                  <li>Management of MySQL database to store and retrieve user data</li>
+                  <li>Collaboration with the technical team to improve features and optimize the user interface</li>
+                </ul>
+                <div class="mt-2">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">REST API</span>
+                </div>
+                <button class="btn btn-sm btn-outline-primary mt-2" onclick="event.stopPropagation();showProjectDetails('ofppt-webapp')">
+                  View Project Details
+                </button>
+              </div>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item interactive-card" onclick="toggleExpand(this)">
+              <h4>Observation Internship</h4>
+              <h5>06/2023 - 07/2023</h5>
+              <p><em>OFPPT</em></p>
+              <div class="expandable-content" style="display: none;">
+                <ul>
+                  <li>Discovery of the functioning of a professional environment in the field of computer development</li>
+                  <li>Observation of the processes of design, development and maintenance of computer applications</li>
+                  <li>Familiarization with the tools and technologies used</li>
+                </ul>
+              </div>
+            </div><!-- End Resume Item -->
+
+            <h3 class="resume-title">Technical Projects</h3>
+            
+            <div class="tabs mb-3">
+              <button class="tab-button active" onclick="openTab(event, 'project1')">V2S</button>
+              <button class="tab-button" onclick="openTab(event, 'project2')">MitMe</button>
+            </div>
+            
+            <div id="project1" class="tab-content active">
+              <div class="resume-item interactive-card">
+                <h4>V2S - YouTube Clone</h4>
+                <ul>
+                  <li>Developed a full-featured video sharing platform from scratch using Angular 16 and Spring Boot</li>
+                  <li>Implemented video streaming with adaptive bitrate, user authentication, and recommendation algorithms</li>
+                  <li>Optimized performance to handle 10,000+ concurrent users with Redis caching and CDN integration</li>
+                </ul>
+                <div class="mt-2">
+                  <span class="tech-tag">Angular 16</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Redis</span>
+                  <span class="tech-tag">AWS S3</span>
+                  <span class="tech-tag">FFmpeg</span>
+                </div>
+                <button class="btn btn-sm btn-outline-primary mt-2" onclick="showProjectDetails('v2s')">
+                  View Demo
+                </button>
+              </div>
+            </div>
+            
+            <div id="project2" class="tab-content">
+              <div class="resume-item interactive-card">
+                <h4>MitMe - Video Meeting App</h4>
+                <ul>
+                  <li>Created a real-time video conferencing solution using WebRTC and WebSocket technologies</li>
+                  <li>Developed features including screen sharing, chat, and meeting recording</li>
+                  <li>Implemented end-to-end encryption for secure communications</li>
+                  <li>Optimized for low-latency performance across global networks</li>
+                </ul>
+                <div class="mt-2">
+                  <span class="tech-tag">WebRTC</span>
+                  <span class="tech-tag">WebSockets</span>
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">AES-256</span>
+                </div>
+                <button class="btn btn-sm btn-outline-primary mt-2" onclick="showProjectDetails('mitme')">
+                  View Demo
+                </button>
+              </div>
+            </div>
+
+            <h3 class="resume-title">Technical Skills</h3>
+            <div class="resume-item interactive-card">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Programming Languages</h5>
+                  <ul>
+                    <li>C <span class="badge bg-primary float-end">90%</span></li>
+                    <li>C++ <span class="badge bg-primary float-end">85%</span></li>
+                    <li>C# <span class="badge bg-primary float-end">80%</span></li>
+                    <li>Python <span class="badge bg-primary float-end">95%</span></li>
+                    <li>Java <span class="badge bg-primary float-end">90%</span></li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h5>Web Technologies</h5>
+                  <ul>
+                    <li>React <span class="badge bg-primary float-end">90%</span></li>
+                    <li>Spring Boot <span class="badge bg-primary float-end">85%</span></li>
+                    <li>Angular <span class="badge bg-primary float-end">80%</span></li>
+                    <li>HTML/CSS/JS <span class="badge bg-primary float-end">95%</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="expandable-content">
+                <ul>
+                  <li><strong>Programming Languages:</strong> C, C++, C#, Python, Java</li>
+                  <li><strong>Web Frameworks:</strong> React, Spring Boot</li>
+                  <li><strong>Databases:</strong> SQL, PL/SQL, Oracle, SQL Server</li>
+                  <li><strong>Web Programming:</strong> HTML5, CSS3, JavaScript</li>
+                  <li><strong>Information System Design:</strong> UML 2.5, MERISE</li>
+                  <li><strong>Operating Systems:</strong> Windows, Linux (Ubuntu, Kali)</li>
+                  <li><strong>Computer Networks:</strong> TCP/IP, local networks, interconnection, network security</li>
+                </ul>
+              </div>
+            </div><!-- End Resume Item -->
+
+            <h3 class="resume-title">Certifications</h3>
+            <div class="resume-item interactive-card">
+              <div class="accordion" id="certificationsAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                      Introduction to Big Data with Spark and Hadoop
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
+                    <div class="accordion-body">
+                      Completed comprehensive training on processing large datasets using Spark and Hadoop ecosystems.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                      Introduction to Git and GitHub
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
+                    <div class="accordion-body">
+                      Mastered version control concepts and collaborative development workflows using Git and GitHub.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                      Virtual Networks in Azure
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
+                    <div class="accordion-body">
+                      Gained expertise in designing and implementing virtual networks in Microsoft Azure cloud environment.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="expandable-content">
+                <ul>
+                  <li>Introduction to Big Data with Spark and Hadoop</li>
+                  <li>Introduction to Git and GitHub</li>
+                  <li>Virtual Networks in Azure</li>
+                  <li>Capstone: Retrieving, Processing, and Visualizing Data with Python</li>
+                  <li>Using Python to Access Web Data</li>
+                </ul>
+              </div>
+            </div><!-- End Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Project Details Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="projectModalBody">
+            <!-- Content will be loaded here dynamically -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sadev</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/Saad-Mosaif"><i class="bi bi-github"></i></a>
+        <a href="https://ma.linkedin.com/in/saad-mosaif"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Interactive elements functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // Animate skill bars
+      const skillBars = document.querySelectorAll('.skill-progress');
+      skillBars.forEach(bar => {
+        const width = bar.getAttribute('data-width');
+        bar.style.width = width + '%';
+      });
+      
+      // Initialize tooltips
+      const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+      
+      // Download resume button
+      document.getElementById('download-resume').addEventListener('click', function() {
+        // In a real implementation, this would download the PDF resume
+        alert('Downloading resume...');
+      });
+    });
+    
+    // Toggle expandable content
+    function toggleExpand(element) {
+      const content = element.querySelector('.expandable-content');
+      if (content.style.display === 'none') {
+        content.style.display = 'block';
+        element.classList.add('expanded');
+      } else {
+        content.style.display = 'none';
+        element.classList.remove('expanded');
+      }
+    }
+    
+    // Tab functionality
+    function openTab(evt, tabName) {
+      const tabContents = document.getElementsByClassName('tab-content');
+      for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove('active');
+      }
+      
+      const tabButtons = document.getElementsByClassName('tab-button');
+      for (let i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove('active');
+      }
+      
+      document.getElementById(tabName).classList.add('active');
+      evt.currentTarget.classList.add('active');
+    }
+    
+    // Project details modal
+    function showProjectDetails(projectId) {
+      const modal = new bootstrap.Modal(document.getElementById('projectModal'));
+      const modalBody = document.getElementById('projectModalBody');
+      
+      // In a real implementation, you would fetch this data or have it predefined
+      let content = '';
+      switch(projectId) {
+        case 'marsa-maroc':
+          content = `
+            <h4>Maritime Stopover Management System</h4>
+            <p><strong>Technologies:</strong> Angular 19, Spring Boot 3.2, Docker, Kubernetes, WebSockets</p>
+            <p><strong>Duration:</strong> 5 months</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Real-time vessel tracking with AIS integration</li>
+              <li>Automated scheduling algorithms reducing delays by 23%</li>
+              <li>Role-based access control for port authorities</li>
+              <li>Dashboard with analytics and reporting</li>
+            </ul>
+            <p><strong>Impact:</strong> System deployed across 3 major Moroccan ports, handling 500+ daily vessel movements.</p>
+          `;
+          break;
+        case 'ofppt-webapp':
+          content = `
+            <h4>OFPPT Internal Web Application</h4>
+            <p><strong>Technologies:</strong> React, Spring Boot, MySQL, REST API</p>
+            <p><strong>Duration:</strong> 3 months</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Student and instructor management system</li>
+              <li>Course scheduling and attendance tracking</li>
+              <li>Document sharing and collaboration</li>
+            </ul>
+            <p><strong>Impact:</strong> Adopted by 5 OFPPT centers, serving 2000+ users.</p>
+          `;
+          break;
+        case 'v2s':
+          content = `
+            <h4>V2S - Video Sharing Platform</h4>
+            <p><strong>Technologies:</strong> Angular 16, Spring Boot, Redis, AWS S3, FFmpeg</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Adaptive bitrate streaming for optimal quality</li>
+              <li>Personalized recommendation engine</li>
+              <li>User engagement analytics</li>
+              <li>Content moderation tools</li>
+            </ul>
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+            </div>
+          `;
+          break;
+        case 'mitme':
+          content = `
+            <h4>MitMe - Video Conferencing Solution</h4>
+            <p><strong>Technologies:</strong> WebRTC, WebSockets, React, Node.js, AES-256</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>End-to-end encrypted communications</li>
+              <li>Screen sharing and collaborative whiteboard</li>
+              <li>Meeting recording with cloud storage</li>
+              <li>Bandwidth optimization for low-speed connections</li>
+            </ul>
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+            </div>
+          `;
+          break;
+      }
+      
+      modalBody.innerHTML = content;
+      modal.show();
+    }
+  </script>
+
+</body>
+
+</html>
