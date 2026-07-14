@@ -31,6 +31,7 @@
     document.querySelector('body').classList.toggle('mobile-nav-active');
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
+    mobileNavToggleBtn.setAttribute('aria-expanded', document.body.classList.contains('mobile-nav-active'));
   }
   mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
 
@@ -181,6 +182,85 @@
       }, false);
     });
 
+  });
+
+  /**
+   * Reading progress, restrained reveal motion, and hero depth.
+   */
+  const updateScrollProgress = () => {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
+    document.body.style.setProperty('--scroll-progress', progress);
+  };
+
+  updateScrollProgress();
+  document.addEventListener('scroll', updateScrollProgress, { passive: true });
+  window.addEventListener('resize', updateScrollProgress);
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealTargets = document.querySelectorAll([
+    '.hero-copy',
+    '.hero-system',
+    '.section-heading',
+    '.selected-project',
+    '.capability-card',
+    '.flow-step',
+    '.about-hero',
+    '.about-facts',
+    '.about-stack-grid article',
+    '.about-timeline-item',
+    '.about-method-panel',
+    '.resume-hero',
+    '.resume-contact-grid',
+    '.resume-panel',
+    '.services-hero',
+    '.service-offer',
+    '.services-cta',
+    '.portfolio-hero',
+    '.portfolio-case',
+    '.contact-hero',
+    '.contact-panel',
+    '.contact-form'
+  ].join(','));
+
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    revealTargets.forEach((element, index) => {
+      element.classList.add('reveal-item');
+      element.style.transitionDelay = `${Math.min(index % 4, 3) * 55}ms`;
+    });
+    document.body.classList.add('motion-ready');
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px' });
+
+    revealTargets.forEach((element) => revealObserver.observe(element));
+  }
+
+  const heroSystem = document.querySelector('.hero-system');
+  const precisePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  if (heroSystem && precisePointer && !reduceMotion) {
+    heroSystem.addEventListener('pointermove', (event) => {
+      const bounds = heroSystem.getBoundingClientRect();
+      const x = (event.clientX - bounds.left) / bounds.width - 0.5;
+      const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+      heroSystem.style.transform = `perspective(1200px) rotateY(${x * 3}deg) rotateX(${-y * 3}deg) translateY(-3px)`;
+    });
+
+    heroSystem.addEventListener('pointerleave', () => {
+      heroSystem.style.transform = '';
+    });
+  }
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && document.body.classList.contains('mobile-nav-active')) {
+      mobileNavToogle();
+    }
   });
 
 })();
