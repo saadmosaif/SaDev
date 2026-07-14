@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>About - SaDev</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="About Saad Mosaif, Backend & AI Engineer specialized in Java, Spring Boot, PostgreSQL, Keycloak, and LLM/RAG systems.">
+  <meta name="keywords" content="Saad Mosaif, Backend Engineer, AI Engineer, Java, Spring Boot, PostgreSQL, Keycloak, LLM, RAG">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -26,60 +26,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  
-  <!-- GSAP Animation -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-  
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <style>
-    /* Custom GSAP animation styles */
-    .floating {
-      animation: floating 6s ease-in-out infinite;
-    }
-    
-    @keyframes floating {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-15px); }
-      100% { transform: translateY(0px); }
-    }
-    
-    .tech-bubble {
-      position: absolute;
-      background: rgba(255,255,255,0.1);
-      border-radius: 50%;
-      backdrop-filter: blur(5px);
-      z-index: -1;
-    }
-    
-    .animated-border {
-      position: relative;
-    }
-    
-    .animated-border::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: linear-gradient(90deg, #3498db, #9b59b6);
-      transition: width 0.6s ease;
-    }
-    
-    .animated-border:hover::after {
-      width: 100%;
-    }
-    
-    .text-gradient {
-      background: linear-gradient(90deg, #3498db, #9b59b6);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-  </style>
 </head>
 
 <body class="about-page">
@@ -113,106 +59,122 @@
 
   <main class="main">
 
-    <section id="about" class="about section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="text-gradient">About</h2>
-        <p class="text-xl">Learn more about my journey, my expertise and how I aim to contribute through innovation and passion.</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4 position-relative">
-            <img src="assets/img/profile-img.jpg" class="img-fluid floating" alt="Saad Mosaif" id="profile-img">
-            <!-- Tech bubbles that will be animated with GSAP -->
-            <div class="tech-bubble" id="bubble1"></div>
-            <div class="tech-bubble" id="bubble2"></div>
-            <div class="tech-bubble" id="bubble3"></div>
+    <section id="about" class="about about-profile section">
+      <div class="container">
+        <div class="about-hero" data-aos="fade-up">
+          <div class="about-photo">
+            <img src="assets/img/profile-img.jpg" alt="Saad Mosaif" class="img-fluid">
           </div>
-          <div class="col-lg-8 content">
-            <h2 class="text-gradient mb-4">Software Engineering Student & AI Engineer</h2>
-            <p class="fst-italic py-3 text-lg">
-              I am currently pursuing my engineering studies in MIAGE, holding a dual degree in Artificial Intelligence. I am passionate about designing and developing innovative software tools that deliver high value.
+          <div class="about-intro">
+            <span class="about-kicker">Backend & AI Engineer</span>
+            <h2>Reliable systems, clean APIs, and AI modules that fit real products.</h2>
+            <p>
+              I am Saad Mosaif, a Backend & AI Engineer based in Casablanca. I specialize in Java 21,
+              Spring Boot, PostgreSQL, Keycloak, and LLM/RAG integration, with a focus on secure,
+              maintainable systems that can support serious product workflows.
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="space-y-2">
-                  <li class="flex items-center"><i class="bi bi-chevron-right mr-2 text-purple-500"></i> <strong>Birthday:</strong> <span class="ml-2">May 5, 2002</span></li>
-                  <li class="flex items-center"><i class="bi bi-chevron-right mr-2 text-purple-500"></i> <strong>Website:</strong> <span class="ml-2">www.sadev.ma</span></li>
-                  <li class="flex items-center"><i class="bi bi-chevron-right mr-2 text-purple-500"></i> <strong>Phone:</strong> <span class="ml-2">+212 6 07 08 80 06</span></li>
-                  <li class="flex items-center"><i class="bi bi-chevron-right mr-2 text-purple-500"></i> <strong>City:</strong> <span class="ml-2">Casablanca, Morocco</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="space-y-2">
-                  <li class="flex items-center"><i class="bi bi-chevron-right mr-2 text-purple-500"></i> <strong>Age:</strong> <span class="ml-2">23</span></li>
-                  <li class="flex items-center"><i class="bi bi-chevron-right mr-2 text-purple-500"></i> <strong>Degree:</strong> <span class="ml-2">Master (MIAGE & AI)</span></li>
-                  <li class="flex items-center"><i class="bi bi-chevron-right mr-2 text-purple-500"></i> <strong>Email:</strong> <span class="ml-2">saadmosaif.pro@gmail.com</span></li>
-                  <li class="flex items-center"><i class="bi bi-chevron-right mr-2 text-purple-500"></i> <strong>Freelance:</strong> <span class="ml-2">Available</span></li>
-                </ul>
-              </div>
+            <div class="about-actions">
+              <a href="resume.html" class="about-primary">View Resume</a>
+              <a href="cv/SAAD%20MOSAIF%20eng.pdf" class="about-secondary" download>Download CV</a>
             </div>
-            <p class="py-3 text-lg">
-              With a strong foundation in programming, system architecture, and artificial intelligence, I am actively seeking opportunities to contribute to transformative and ambitious projects. I thrive in collaborative environments and continuously strive to bring innovation and precision to everything I work on.
-            </p>
-            
-            <!-- Animated skills section -->
-            <div class="skills-section mt-5">
-              <h3 class="text-gradient mb-4">My Skills</h3>
-              <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="skills-grid">
-                <div class="skill-item bg-white bg-opacity-10 p-4 rounded-lg backdrop-filter backdrop-blur-sm text-center transform transition-all duration-300 hover:scale-105">
-                  <i class="bi bi-code-slash text-4xl text-purple-500 mb-2"></i>
-                  <h4>Web Development</h4>
-                </div>
-                <div class="skill-item bg-white bg-opacity-10 p-4 rounded-lg backdrop-filter backdrop-blur-sm text-center transform transition-all duration-300 hover:scale-105">
-                  <i class="bi bi-robot text-4xl text-blue-500 mb-2"></i>
-                  <h4>AI Engineering</h4>
-                </div>
-                <div class="skill-item bg-white bg-opacity-10 p-4 rounded-lg backdrop-filter backdrop-blur-sm text-center transform transition-all duration-300 hover:scale-105">
-                  <i class="bi bi-database text-4xl text-green-500 mb-2"></i>
-                  <h4>Database Design</h4>
-                </div>
-                <div class="skill-item bg-white bg-opacity-10 p-4 rounded-lg backdrop-filter backdrop-blur-sm text-center transform transition-all duration-300 hover:scale-105">
-                  <i class="bi bi-phone text-4xl text-yellow-500 mb-2"></i>
-                  <h4>Mobile Apps</h4>
-                </div>
-              </div>
-            </div>
+          </div>
+        </div>
+
+        <div class="about-facts" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <span>Location</span>
+            <strong>Casablanca, Morocco</strong>
+          </div>
+          <div>
+            <span>Email</span>
+            <strong>saadmosaif.pro@gmail.com</strong>
+          </div>
+          <div>
+            <span>Phone</span>
+            <strong>+212 607088006</strong>
+          </div>
+          <div>
+            <span>Languages</span>
+            <strong>Arabic, French, English</strong>
           </div>
         </div>
       </div>
     </section>
-    
-    <!-- Timeline Section -->
-    <section class="py-12 bg-gray-100 bg-opacity-50">
+
+    <section class="about-stack section">
       <div class="container">
-        <h2 class="text-center text-gradient mb-12">My Journey</h2>
-        <div class="timeline relative">
-          <!-- Timeline items will be added here with GSAP -->
-          <div class="timeline-line absolute left-1/2 w-1 h-full bg-gradient-to-b from-purple-500 to-blue-500 transform -translate-x-1/2"></div>
-          
-          <div class="timeline-container left mb-8" id="timeline1">
-            <div class="timeline-content bg-white p-6 rounded-lg shadow-lg">
-              <h3 class="text-purple-600">2024 - Present</h3>
-              <p>Master's Degree in MIAGE & AI</p>
-              <p>Developing advanced skills in software engineering and artificial intelligence.</p>
-            </div>
+        <div class="section-heading" data-aos="fade-up">
+          <span>Core Stack</span>
+          <h2>What I build with.</h2>
+        </div>
+        <div class="about-stack-grid">
+          <article data-aos="fade-up" data-aos-delay="50">
+            <i class="bi bi-braces"></i>
+            <h3>Backend</h3>
+            <p>Java 21, Spring Boot, REST APIs, Spring Data JPA, Hibernate, Maven.</p>
+          </article>
+          <article data-aos="fade-up" data-aos-delay="100">
+            <i class="bi bi-database"></i>
+            <h3>Data</h3>
+            <p>PostgreSQL, MySQL, SQL, Flyway, Redis, Caffeine Cache.</p>
+          </article>
+          <article data-aos="fade-up" data-aos-delay="150">
+            <i class="bi bi-shield-lock"></i>
+            <h3>Security</h3>
+            <p>Keycloak, OAuth2/JWT, Spring Security, roles, and permissions.</p>
+          </article>
+          <article data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-cpu"></i>
+            <h3>AI & Quality</h3>
+            <p>LLM/RAG, embeddings, Ollama, Gemini, Groq, Docker, Prometheus, Testcontainers, k6.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-experience section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span>Journey</span>
+          <h2>Recent work and education.</h2>
+        </div>
+        <div class="about-timeline" data-aos="fade-up" data-aos-delay="100">
+          <div class="about-timeline-item">
+            <span>Nov 2025 - Present</span>
+            <h3>Backend & AI Engineer - Koog</h3>
+            <p>Building the backend foundation of a travel booking platform, including booking, payment, hotel, messaging, notification, Keycloak security, Redis caching, observability, and Koogy AI powered by LLM/RAG.</p>
           </div>
-          
-          <div class="timeline-container right mb-8" id="timeline2">
-            <div class="timeline-content bg-white p-6 rounded-lg shadow-lg">
-              <h3 class="text-blue-600">2022 - 2024</h3>
-              <p>First Projects & Freelance Work</p>
-              <p>Started building real-world applications and working with clients.</p>
-            </div>
+          <div class="about-timeline-item">
+            <span>Mar 2025 - Sep 2025</span>
+            <h3>Full-Stack Developer Intern - Marsa Maroc</h3>
+            <p>Designed and optimized a port call management application with modules for ports, terminals, vessels, goods, arrival notices, analytics, chatbot features, and Keycloak authentication.</p>
           </div>
-          
-          <div class="timeline-container left mb-8" id="timeline3">
-            <div class="timeline-content bg-white p-6 rounded-lg shadow-lg">
-              <h3 class="text-purple-600">2019-2020</h3>
-              <p>Bachelor's Degree in Computer Science</p>
-              <p>Gained foundational knowledge in Problem solving algorythmes</p>
-            </div>
+          <div class="about-timeline-item">
+            <span>Jul 2024 - Sep 2024</span>
+            <h3>Web Application Developer Intern - OFPPT</h3>
+            <p>Built a Spring Boot and React web application, managed MySQL data, and collaborated with the technical team on features and interface improvements.</p>
           </div>
+          <div class="about-timeline-item">
+            <span>Sep 2025</span>
+            <h3>Computer Engineering MIAGE & Applied AI</h3>
+            <p>Completed master's-level education at EMSI Casablanca and Université Côte d'Azur, combining software engineering and applied artificial intelligence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-method section">
+      <div class="container">
+        <div class="about-method-panel" data-aos="fade-up">
+          <div>
+            <span>Working Style</span>
+            <h2>Autonomous, rigorous, product-focused.</h2>
+          </div>
+          <p>
+            I like backend work where business rules matter: availability, payments, authentication,
+            permissions, data integrity, performance, and AI features that solve a real user problem.
+            My priority is to turn complex needs into simple, durable technical decisions.
+          </p>
         </div>
       </div>
     </section>
@@ -222,7 +184,7 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sadev</strong> <span>All Rights Reserved<br></span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">SaDev</strong> <span>All Rights Reserved<br></span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
         <a href="https://github.com/Saad-Mosaif"><i class="bi bi-github"></i></a>
@@ -255,190 +217,5 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   
-  <!-- GSAP Animations -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Initialize GSAP animations
-      gsap.registerPlugin(ScrollTrigger);
-      
-      // Floating tech bubbles animation
-      gsap.to("#bubble1", {
-        duration: 8,
-        x: 50,
-        y: -30,
-        scale: 1.5,
-        opacity: 0.6,
-        repeat: -1,
-        yoyo: true,
-        ease: "sine.inOut"
-      });
-      
-      gsap.to("#bubble2", {
-        duration: 6,
-        x: -40,
-        y: 20,
-        scale: 1.2,
-        opacity: 0.4,
-        repeat: -1,
-        yoyo: true,
-        ease: "sine.inOut"
-      });
-      
-      gsap.to("#bubble3", {
-        duration: 10,
-        x: 30,
-        y: 40,
-        scale: 0.8,
-        opacity: 0.3,
-        repeat: -1,
-        yoyo: true,
-        ease: "sine.inOut"
-      });
-      
-      // Create tech bubbles dynamically
-      function createBubbles() {
-        const container = document.querySelector('.col-lg-4.position-relative');
-        for (let i = 0; i < 5; i++) {
-          const bubble = document.createElement('div');
-          bubble.className = 'tech-bubble';
-          bubble.style.width = `${Math.random() * 100 + 50}px`;
-          bubble.style.height = bubble.style.width;
-          bubble.style.background = `rgba(${Math.floor(Math.random() * 56 + 200)}, ${Math.floor(Math.random() * 56 + 200)}, ${Math.floor(Math.random() * 56 + 200)}, ${Math.random() * 0.3 + 0.1})`;
-          bubble.style.left = `${Math.random() * 80}%`;
-          bubble.style.top = `${Math.random() * 80}%`;
-          container.appendChild(bubble);
-          
-          // Animate each bubble
-          gsap.to(bubble, {
-            duration: Math.random() * 10 + 5,
-            x: Math.random() * 100 - 50,
-            y: Math.random() * 100 - 50,
-            scale: Math.random() * 0.5 + 0.5,
-            opacity: Math.random() * 0.3 + 0.1,
-            repeat: -1,
-            yoyo: true,
-            ease: "sine.inOut"
-          });
-        }
-      }
-      
-      createBubbles();
-      
-      // Animate the profile image on hover
-      const profileImg = document.getElementById('profile-img');
-      profileImg.addEventListener('mouseenter', () => {
-        gsap.to(profileImg, {
-          duration: 0.5,
-          scale: 1.05,
-          boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
-          ease: "power2.out"
-        });
-      });
-      
-      profileImg.addEventListener('mouseleave', () => {
-        gsap.to(profileImg, {
-          duration: 0.5,
-          scale: 1,
-          boxShadow: "none",
-          ease: "power2.out"
-        });
-      });
-      
-      // Animate skills grid
-      gsap.from(".skill-item", {
-        scrollTrigger: {
-          trigger: ".skills-section",
-          start: "top 80%",
-          toggleActions: "play none none none"
-        },
-        duration: 0.8,
-        y: 50,
-        opacity: 0,
-        stagger: 0.2,
-        ease: "back.out(1.7)"
-      });
-      
-      // Timeline animations
-      gsap.from("#timeline1", {
-        scrollTrigger: {
-          trigger: ".timeline",
-          start: "top 70%",
-          toggleActions: "play none none none"
-        },
-        duration: 1,
-        x: -100,
-        opacity: 0,
-        ease: "power2.out"
-      });
-      
-      gsap.from("#timeline2", {
-        scrollTrigger: {
-          trigger: ".timeline",
-          start: "top 60%",
-          toggleActions: "play none none none"
-        },
-        duration: 1,
-        x: 100,
-        opacity: 0,
-        delay: 0.3,
-        ease: "power2.out"
-      });
-      
-      gsap.from("#timeline3", {
-        scrollTrigger: {
-          trigger: ".timeline",
-          start: "top 50%",
-          toggleActions: "play none none none"
-        },
-        duration: 1,
-        x: -100,
-        opacity: 0,
-        delay: 0.6,
-        ease: "power2.out"
-      });
-      
-      // Text gradient animation
-      const textGradients = document.querySelectorAll('.text-gradient');
-      textGradients.forEach(text => {
-        text.addEventListener('mouseenter', () => {
-          gsap.to(text, {
-            duration: 0.5,
-            backgroundPosition: '100% 50%',
-            ease: "power2.inOut"
-          });
-        });
-        text.addEventListener('mouseleave', () => {
-          gsap.to(text, {
-            duration: 0.5,
-            backgroundPosition: '0% 50%',
-            ease: "power2.inOut"
-          });
-        });
-      });
-      
-      // Social icons animation
-      const socialIcons = document.querySelectorAll('.social-icon');
-      socialIcons.forEach(icon => {
-        icon.addEventListener('mouseenter', () => {
-          gsap.to(icon, {
-            duration: 0.3,
-            y: -5,
-            color: '#9b59b6',
-            scale: 1.2,
-            ease: "power2.out"
-          });
-        });
-        icon.addEventListener('mouseleave', () => {
-          gsap.to(icon, {
-            duration: 0.3,
-            y: 0,
-            color: '',
-            scale: 1,
-            ease: "power2.out"
-          });
-        });
-      });
-    });
-  </script>
 </body>
 </html>
