@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://sadev.ma/</loc>
+    <loc>https://sadev.ma/index</loc>
     <lastmod>2026-07-14</lastmod>
     <image:image>
       <image:loc>https://sadev.ma/assets/img/og-sadev.jpg</image:loc>
@@ -10,7 +10,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://sadev.ma/about.html</loc>
+    <loc>https://sadev.ma/about</loc>
     <lastmod>2026-07-14</lastmod>
     <image:image>
       <image:loc>https://sadev.ma/assets/img/profile-img.jpg</image:loc>
@@ -18,19 +18,19 @@
     </image:image>
   </url>
   <url>
-    <loc>https://sadev.ma/resume.html</loc>
+    <loc>https://sadev.ma/resume</loc>
     <lastmod>2026-07-14</lastmod>
   </url>
   <url>
-    <loc>https://sadev.ma/services.html</loc>
+    <loc>https://sadev.ma/services</loc>
     <lastmod>2026-07-14</lastmod>
   </url>
   <url>
-    <loc>https://sadev.ma/portfolio.html</loc>
+    <loc>https://sadev.ma/portfolio</loc>
     <lastmod>2026-07-14</lastmod>
   </url>
   <url>
-    <loc>https://sadev.ma/contact.html</loc>
+    <loc>https://sadev.ma/contact</loc>
     <lastmod>2026-07-14</lastmod>
   </url>
 </urlset>
