@@ -12,9 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --heading-font: "Instrument Serif", serif;
+  --nav-font: "Manrope", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -3767,8 +3767,8 @@ section,
   box-shadow: none;
 }
 
-.header .logo h1,
-.index-page .header .logo h1 {
+.header .logo .sitename,
+.index-page .header .logo .sitename {
   display: block;
   margin: 0;
   color: var(--sadev-ink);
@@ -3776,7 +3776,7 @@ section,
   text-transform: uppercase;
 }
 
-.header .logo h1::after {
+.header .logo .sitename::after {
   content: "Backend + AI";
   display: block;
   margin-top: 5px;
@@ -3857,12 +3857,13 @@ section,
 }
 
 .section-heading h2,
-.services-hero h2,
-.portfolio-hero h2,
-.resume-hero h2,
-.about-intro h2,
+.services-hero h1,
+.portfolio-hero h1,
+.resume-hero h1,
+.about-intro h1,
 .about-method-panel h2,
-.contact-hero h2 {
+.contact-hero h1 {
+  margin: 0;
   color: var(--sadev-ink);
   font-family: var(--display-font);
   font-weight: 400;
@@ -3933,7 +3934,7 @@ section,
   box-shadow: 0 0 0 5px rgba(102, 112, 90, 0.12);
 }
 
-.sadev-hero h2 {
+.sadev-hero h1 {
   max-width: 840px;
   color: var(--sadev-ink);
   font-family: var(--display-font);
@@ -3942,7 +3943,7 @@ section,
   line-height: 0.91;
 }
 
-.sadev-hero h2 em {
+.sadev-hero h1 em {
   color: var(--sadev-clay);
   font-weight: 400;
 }
@@ -4214,10 +4215,12 @@ section,
   display: grid;
   min-width: 0;
   border: 1px solid var(--sadev-line);
-  border-radius: 5px;
+  border-radius: 12px;
   background: var(--sadev-surface);
   color: var(--sadev-ink);
   overflow: hidden;
+  box-shadow: 0 4px 18px rgba(17, 18, 15, 0.03);
+  transition: transform 450ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 450ms cubic-bezier(0.16, 1, 0.3, 1), border-color 450ms ease;
 }
 
 .selected-project-media {
@@ -4274,7 +4277,13 @@ section,
 
 .selected-project:hover {
   color: var(--sadev-ink);
-  border-color: rgba(23, 24, 22, 0.3);
+  transform: translateY(-8px);
+  border-color: var(--sadev-mint);
+  box-shadow: 0 24px 48px rgba(17, 18, 15, 0.08);
+}
+
+.selected-project-koog:hover {
+  border-color: var(--sadev-coral);
 }
 
 .selected-project:hover .selected-project-media img {
@@ -4350,7 +4359,7 @@ section,
   background: transparent;
 }
 
-.about-intro h2,
+.about-intro h1,
 .about-method-panel h2 {
   max-width: 900px;
   font-size: 68px;
@@ -4475,10 +4484,10 @@ section,
   background: transparent;
 }
 
-.resume-hero h2,
-.services-hero h2,
-.portfolio-hero h2,
-.contact-hero h2 {
+.resume-hero h1,
+.services-hero h1,
+.portfolio-hero h1,
+.contact-hero h1 {
   font-size: 78px;
   line-height: 0.92;
 }
@@ -4697,10 +4706,11 @@ section,
   display: block;
   min-height: 0;
   border: 1px solid var(--sadev-line);
-  border-radius: 5px;
+  border-radius: 12px;
   background: var(--sadev-surface);
-  box-shadow: none;
+  box-shadow: 0 4px 18px rgba(17, 18, 15, 0.03);
   counter-increment: project;
+  transition: transform 450ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 450ms cubic-bezier(0.16, 1, 0.3, 1), border-color 450ms ease;
 }
 
 .portfolio-grid {
@@ -4714,9 +4724,13 @@ section,
 }
 
 .portfolio-case:hover {
-  transform: translateY(-3px);
-  border-color: rgba(23, 24, 22, 0.3);
-  box-shadow: 0 18px 45px rgba(23, 24, 22, 0.07);
+  transform: translateY(-8px);
+  border-color: var(--sadev-mint);
+  box-shadow: 0 24px 48px rgba(17, 18, 15, 0.08);
+}
+
+.featured-case:hover {
+  border-color: var(--sadev-coral);
 }
 
 .portfolio-case::after {
@@ -5089,7 +5103,7 @@ section,
     min-height: 500px;
   }
 
-  .sadev-hero h2 {
+  .sadev-hero h1 {
     font-size: 76px;
   }
 
@@ -5201,7 +5215,7 @@ section,
     height: 40px;
   }
 
-  .header .logo h1 {
+  .header .logo .sitename {
     font-size: 13px;
   }
 
@@ -5265,7 +5279,7 @@ section,
     padding: 70px 0 58px;
   }
 
-  .sadev-hero h2 {
+  .sadev-hero h1 {
     font-size: 58px;
   }
 
@@ -5320,12 +5334,12 @@ section,
   }
 
   .section-heading h2,
-  .about-intro h2,
+  .about-intro h1,
   .about-method-panel h2,
-  .resume-hero h2,
-  .services-hero h2,
-  .portfolio-hero h2,
-  .contact-hero h2 {
+  .resume-hero h1,
+  .services-hero h1,
+  .portfolio-hero h1,
+  .contact-hero h1 {
     font-size: 48px;
   }
 
@@ -5424,7 +5438,7 @@ section,
 }
 
 @media (max-width: 480px) {
-  .sadev-hero h2 {
+  .sadev-hero h1 {
     font-size: 49px;
   }
 

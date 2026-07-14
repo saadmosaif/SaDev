@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://sadev.ma/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <image:image>
+      <image:loc>https://sadev.ma/assets/img/og-sadev.jpg</image:loc>
+      <image:title>SaDev - Saad Mosaif, Backend and AI Engineer</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://sadev.ma/about.html</loc>
+    <lastmod>2026-07-14</lastmod>
+    <image:image>
+      <image:loc>https://sadev.ma/assets/img/profile-img.jpg</image:loc>
+      <image:title>Saad Mosaif, Backend and AI Engineer</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://sadev.ma/resume.html</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://sadev.ma/services.html</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://sadev.ma/portfolio.html</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://sadev.ma/contact.html</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+</urlset>

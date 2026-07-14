@@ -50,13 +50,22 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
-    fetch(action, {
+    let fetchOptions = {
       method: 'POST',
       body: formData,
       headers: {'X-Requested-With': 'XMLHttpRequest'}
-    })
+    };
+
+    if (action.includes('formspree.io')) {
+      fetchOptions.headers['Accept'] = 'application/json';
+    }
+
+    fetch(action, fetchOptions)
     .then(response => {
       if( response.ok ) {
+        if (action.includes('formspree.io')) {
+          return response.json();
+        }
         return response.text();
       } else {
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
@@ -64,7 +73,7 @@
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      if (action.includes('formspree.io') || data.trim() == 'OK') {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
