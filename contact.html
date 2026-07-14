@@ -34,6 +34,7 @@
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/apple-touch-icon.png" alt="SaDev logo">
         <h1 class="sitename">SaDev</h1>
       </a>
 
@@ -41,10 +42,10 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="resume.html" >Resume</a></li>
+          <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html"class="active">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -58,71 +59,96 @@
   </header>
 
   <main class="main">
-    <section id="contact" class="contact section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact Me</h2>
-        <p>Let's connect. I'm open to projects, collaborations, and opportunities.</p>
-      </div>
+    <section id="contact" class="contact-modern section">
+      <div class="container">
+        <div class="contact-hero">
+          <div>
+            <span>Contact</span>
+            <h2>Tell me what you are building. I will help shape the backend, AI, or product logic.</h2>
+          </div>
+          <div class="contact-signal">
+            <i class="bi bi-lightning-charge"></i>
+            <p>Available for backend engineering, AI integration, secure API work, and project-based collaboration.</p>
+          </div>
+        </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-5">
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Casablanca, Morocco</p>
-                </div>
-              </div>
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone"></i>
-                <div>
-                  <h3>Call</h3>
-                  <p>+212 6 07 08 80 06</p>
-                </div>
-              </div>
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope"></i>
-                <div>
-                  <h3>Email</h3>
-                  <p>saadmosaif.pro@gmail.com</p>
-                </div>
-              </div>
-              <iframe src="https://maps.google.com/maps?q=casablanca&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen></iframe>
+        <div class="contact-layout">
+          <aside class="contact-panel">
+            <div class="contact-card primary-contact-card">
+              <span>Direct</span>
+              <h3>Fastest way to reach me.</h3>
+              <a href="mailto:saadmosaif.pro@gmail.com">saadmosaif.pro@gmail.com</a>
+              <a href="tel:+212607088006">+212 6 07 08 80 06</a>
             </div>
-          </div>
 
-          <div class="col-lg-7">
-            <form action="https://formspree.io/f/xqaqroze" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://sadev.ma/index.html">
-  <input type="text" name="_honey" style="display:none">
+            <div class="contact-methods">
+              <a href="https://github.com/Saad-Mosaif" class="contact-method">
+                <i class="bi bi-github"></i>
+                <span>GitHub</span>
+                <strong>Saad-Mosaif</strong>
+              </a>
+              <a href="https://ma.linkedin.com/in/saad-mosaif" class="contact-method">
+                <i class="bi bi-linkedin"></i>
+                <span>LinkedIn</span>
+                <strong>saad-mosaif</strong>
+              </a>
+              <div class="contact-method">
+                <i class="bi bi-geo-alt"></i>
+                <span>Location</span>
+                <strong>Casablanca, Morocco</strong>
+              </div>
+            </div>
 
-  <div class="row gy-4">
-    <div class="col-md-6">
-      <label for="name-field">Your Name</label>
-      <input type="text" name="name" class="form-control" required>
-    </div>
-    <div class="col-md-6">
-      <label for="email-field">Your Email</label>
-      <input type="email" name="email" class="form-control" required>
-    </div>
-    <div class="col-md-12">
-      <label for="subject-field">Subject</label>
-      <input type="text" name="subject" class="form-control" required>
-    </div>
-    <div class="col-md-12">
-      <label for="message-field">Message</label>
-      <textarea name="message" class="form-control" rows="10" required></textarea>
-    </div>
-    <div class="col-md-12 text-center">
-      <button type="submit">Send Message</button>
-    </div>
-  </div>
-</form>
+            <div class="contact-mini-grid">
+              <div>
+                <span>Focus</span>
+                <strong>Backend / AI</strong>
+              </div>
+              <div>
+                <span>Stack</span>
+                <strong>Java, Spring, PostgreSQL</strong>
+              </div>
+            </div>
+          </aside>
 
-          </div>
+          <form action="https://formspree.io/f/xqaqroze" method="POST" class="contact-form php-email-form">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://sadev.ma/index.html">
+            <input type="text" name="_honey" class="contact-honey" tabindex="-1" autocomplete="off">
+
+            <div class="form-intro">
+              <span>Project Brief</span>
+              <h3>Send the useful context first.</h3>
+              <p>What needs to be built, fixed, secured, scaled, or connected to AI?</p>
+            </div>
+
+            <div class="contact-fields">
+              <div class="field-group">
+                <label for="name-field">Name</label>
+                <input id="name-field" type="text" name="name" placeholder="Your name" required>
+              </div>
+
+              <div class="field-group">
+                <label for="email-field">Email</label>
+                <input id="email-field" type="email" name="email" placeholder="you@company.com" required>
+              </div>
+
+              <div class="field-group full-field">
+                <label for="subject-field">Subject</label>
+                <input id="subject-field" type="text" name="subject" placeholder="Backend API, AI assistant, platform audit..." required>
+              </div>
+
+              <div class="field-group full-field">
+                <label for="message-field">Message</label>
+                <textarea id="message-field" name="message" rows="8" placeholder="Share the goal, current stack, timeline, and what success should look like." required></textarea>
+              </div>
+            </div>
+
+            <button type="submit">
+              <span>Send Message</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>
+          </form>
         </div>
       </div>
     </section>

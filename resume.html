@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Resume - SADEV</title>
+  <title>Resume - SaDev</title>
   <meta name="description" content="Resume of Saad Mosaif, Backend & AI Engineer specializing in Java, Spring Boot, PostgreSQL, Keycloak, and LLM/RAG systems.">
   <meta name="keywords" content="resume, backend engineer, AI engineer, Java, Spring Boot, PostgreSQL, Keycloak, LLM, RAG, MIAGE">
 
@@ -27,95 +27,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <style>
-    /* Additional interactive styles */
-    .interactive-card {
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-    .interactive-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-    .skill-bar {
-      height: 10px;
-      background-color: #e9ecef;
-      border-radius: 5px;
-      margin-bottom: 15px;
-    }
-    .skill-progress {
-      height: 100%;
-      border-radius: 5px;
-      background: linear-gradient(90deg, #3498db, #6a5acd);
-      width: 0;
-      transition: width 1s ease-in-out;
-    }
-    .tech-tag {
-      display: inline-block;
-      padding: 3px 8px;
-      background-color: #f0f0f0;
-      border-radius: 15px;
-      margin: 2px;
-      font-size: 0.8rem;
-      transition: all 0.3s ease;
-    }
-    .tech-tag:hover {
-      background-color: #3498db;
-      color: white;
-      transform: scale(1.05);
-    }
-    .timeline-item {
-      position: relative;
-      padding-left: 30px;
-      margin-bottom: 30px;
-    }
-    .timeline-item:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 5px;
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      background-color: #3498db;
-    }
-    .timeline-item:after {
-      content: '';
-      position: absolute;
-      left: 7px;
-      top: 20px;
-      bottom: -30px;
-      width: 1px;
-      background-color: #dee2e6;
-    }
-    .timeline-item:last-child:after {
-      display: none;
-    }
-    .gradient-text {
-      background: linear-gradient(90deg, #3498db, #6a5acd);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-    .tab-content {
-      display: none;
-    }
-    .tab-content.active {
-      display: block;
-      animation: fadeIn 0.5s ease;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    .tab-button {
-      transition: all 0.3s ease;
-    }
-    .tab-button.active {
-      background-color: #3498db;
-      color: white;
-    }
-  </style>
 </head>
 
 <body class="resume-page">
@@ -124,6 +35,7 @@
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/apple-touch-icon.png" alt="SaDev logo">
         <h1 class="sitename">SaDev</h1>
       </a>
 
@@ -149,314 +61,160 @@
 
   <main class="main">
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Backend & AI Engineer specializing in <span class="gradient-text">Java/Spring Boot</span>, <span class="gradient-text">PostgreSQL</span>, and <span class="gradient-text">LLM/RAG</span> systems.</p>
-        <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
-          <a id="download-resume" href="cv/SAAD%20MOSAIF%20eng.pdf" class="btn btn-primary" download>
-            <i class="bi bi-download me-2"></i>Download English PDF
-          </a>
-          <a href="cv/SAAD%20MOSAIF.pdf" class="btn btn-outline-primary" download>
-            <i class="bi bi-download me-2"></i>Download French PDF
-          </a>
-        </div>
-      </div>
-
+    <section id="resume" class="resume-modern section">
       <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-
-            <div class="resume-item pb-0 interactive-card" onclick="toggleExpand(this)">
-              <h4>Saad Mosaif</h4>
-              <p><em>Backend & AI Developer specialized in Java, Spring Boot, PostgreSQL, and AI module integration. I design reliable, secure, and maintainable backend systems, from REST API architecture and database modeling to authentication, performance optimization, and deployment support.</em></p>
-              <div class="expandable-content" style="display: none;">
-                <ul>
-                  <li><i class="bi bi-geo-alt-fill me-2"></i>Casablanca, Morocco</li>
-                  <li><i class="bi bi-telephone-fill me-2"></i>+212 607088006</li>
-                  <li><i class="bi bi-envelope-fill me-2"></i>saadmosaif.pro@gmail.com</li>
-                </ul>
-                <div class="mt-3">
-                  <div class="d-flex justify-content-around">
-                    <a href="https://github.com/Saad-Mosaif" class="btn btn-outline-dark btn-sm">
-                      <i class="bi bi-github me-1"></i> GitHub
-                    </a>
-                    <a href="https://ma.linkedin.com/in/saad-mosaif" class="btn btn-outline-primary btn-sm">
-                      <i class="bi bi-linkedin me-1"></i> LinkedIn
-                    </a>
-                    <a href="mailto:saadmosaif.pro@gmail.com" class="btn btn-outline-danger btn-sm">
-                      <i class="bi bi-envelope me-1"></i> Email
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item interactive-card" onclick="toggleExpand(this)">
-              <h4>Master's Degree in Computer Engineering, MIAGE option</h4>
-              <h5>September 2025</h5>
-              <p><em>École Marocaine des Sciences de l'Ingénieur - EMSI, Casablanca</em></p>
-              <div class="expandable-content" style="display: none;">
-                <p>Software engineering, information systems, architecture, databases, and enterprise application development.</p>
-              </div>
-            </div>
-
-            <div class="resume-item interactive-card" onclick="toggleExpand(this)">
-              <h4>Master's Degree in Applied Artificial Intelligence</h4>
-              <h5>September 2025</h5>
-              <p><em>Université Côte d'Azur, France</em></p>
-              <div class="expandable-content" style="display: none;">
-                <p>Applied AI, machine learning, production AI systems, and intelligent software modules.</p>
-              </div>
-            </div>
-
-            <div class="resume-item interactive-card" onclick="toggleExpand(this)">
-              <h4>Baccalaureate: Physical Sciences</h4>
-              <h5>2020</h5>
-              <p><em>Lycée Yassamine, Californie</em></p>
-              <div class="expandable-content" style="display: none;">
-                <ul>
-                  <li>Graduated with honors</li>
-                  <li>Mathematics and Physics specialization</li>
-                </ul>
-              </div>
-            </div><!-- End Resume Item -->
-
-            <h3 class="resume-title">Skills</h3>
-            <div class="resume-item interactive-card">
-              <div class="mb-3">
-                <h5>Backend</h5>
-                <span class="tech-tag">Java 21</span>
-                <span class="tech-tag">Spring Boot</span>
-                <span class="tech-tag">REST APIs</span>
-                <span class="tech-tag">Spring Data JPA</span>
-                <span class="tech-tag">Hibernate</span>
-                <span class="tech-tag">Maven</span>
-              </div>
-              <div class="mb-3">
-                <h5>Databases & Security</h5>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">MySQL</span>
-                <span class="tech-tag">Flyway</span>
-                <span class="tech-tag">Redis</span>
-                <span class="tech-tag">Keycloak</span>
-                <span class="tech-tag">OAuth2/JWT</span>
-                <span class="tech-tag">Spring Security</span>
-              </div>
-              <div class="mb-3">
-                <h5>AI, DevOps & Frontend</h5>
-                <span class="tech-tag">LLM</span>
-                <span class="tech-tag">RAG</span>
-                <span class="tech-tag">Embeddings</span>
-                <span class="tech-tag">Ollama</span>
-                <span class="tech-tag">Gemini</span>
-                <span class="tech-tag">Groq</span>
-                <span class="tech-tag">Docker</span>
-                <span class="tech-tag">GitLab</span>
-                <span class="tech-tag">Prometheus</span>
-                <span class="tech-tag">Testcontainers</span>
-                <span class="tech-tag">k6</span>
-                <span class="tech-tag">Angular</span>
-                <span class="tech-tag">React</span>
-              </div>
-            </div>
-
-            <h3 class="resume-title">Languages</h3>
-            <div class="resume-item interactive-card">
-              <ul>
-                <li>Arabic - native</li>
-                <li>French - fluent</li>
-                <li>English - fluent</li>
-              </ul>
-            </div><!-- End Resume Item -->
-
+        <div class="resume-hero">
+          <div>
+            <span class="resume-kicker">Resume</span>
+            <h2>Backend & AI Engineer</h2>
+            <p>
+              Java/Spring Boot backend engineer focused on reliable REST APIs, PostgreSQL architecture,
+              Keycloak security, booking engines, observability, and LLM/RAG product modules.
+            </p>
           </div>
+          <div class="resume-actions">
+            <a href="cv/SAAD%20MOSAIF%20eng.pdf" download><i class="bi bi-download"></i> English PDF</a>
+            <a href="cv/SAAD%20MOSAIF.pdf" download><i class="bi bi-download"></i> French PDF</a>
+          </div>
+        </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
+        <div class="resume-contact-grid">
+          <div><span>Location</span><strong>Casablanca, Morocco</strong></div>
+          <div><span>Email</span><strong>saadmosaif.pro@gmail.com</strong></div>
+          <div><span>Phone</span><strong>+212 607088006</strong></div>
+          <div><span>Languages</span><strong>Arabic native, French fluent, English fluent</strong></div>
+        </div>
 
-            <div class="resume-item interactive-card" onclick="toggleExpand(this)">
-              <h4>Backend & AI Engineer</h4>
-              <h5>November 2025 - Present</h5>
-              <p><em>Koog</em></p>
-              <div class="expandable-content" style="display: none;">
-                <ul>
-                  <li>Built the backend foundation of a travel booking platform as the main backend reference within a team of 5 people.</li>
-                  <li>Designed REST APIs and a PostgreSQL/JPA architecture covering users, listings, calendar, booking, payment, hotel, messaging, and notification modules.</li>
-                  <li>Implemented a reliable booking engine with availability management, pricing, payments, expirations, cancellations, refunds, and double-booking prevention.</li>
-                  <li>Integrated Keycloak/OAuth2/JWT authentication, Koogy AI powered by LLM/RAG, Redis, caching, Prometheus/Actuator observability, and k6/Testcontainers testing.</li>
-                </ul>
-                <div class="mt-2">
-                  <span class="tech-tag">Java 21</span>
-                  <span class="tech-tag">Spring Boot</span>
-                  <span class="tech-tag">PostgreSQL</span>
-                  <span class="tech-tag">Redis</span>
-                  <span class="tech-tag">Hibernate/JPA</span>
-                  <span class="tech-tag">Flyway</span>
-                  <span class="tech-tag">Keycloak</span>
-                  <span class="tech-tag">Docker</span>
-                  <span class="tech-tag">Prometheus</span>
-                  <span class="tech-tag">LLM/RAG</span>
+        <div class="resume-layout">
+          <aside class="resume-sidebar">
+            <section class="resume-panel">
+              <h3>Core Stack</h3>
+              <div class="resume-skill-group">
+                <h4>Backend</h4>
+                <div class="resume-tags">
+                  <span>Java 21</span><span>Spring Boot</span><span>REST APIs</span><span>Spring Data JPA</span><span>Hibernate</span><span>Maven</span>
                 </div>
               </div>
-            </div>
-            
-            <div class="resume-item interactive-card" onclick="toggleExpand(this)">
-              <h4>Full-Stack Developer Intern</h4>
-              <h5>March 2025 - September 2025</h5>
-              <p><em>Marsa Maroc</em></p>
-              <div class="expandable-content" style="display: none;">
-                <ul>
-                  <li>Designed and optimized a port call management application to improve administration and operational efficiency.</li>
-                  <li>Developed modules for ports, terminals, vessels, goods, and arrival notices, including status management and business rules.</li>
-                  <li>Integrated an analytics dashboard, a chatbot, and secure authentication using Keycloak.</li>
-                </ul>
-                <div class="mt-2">
-                  <span class="tech-tag">Spring Boot</span>
-                  <span class="tech-tag">Hibernate</span>
-                  <span class="tech-tag">Angular</span>
-                  <span class="tech-tag">SQL</span>
-                  <span class="tech-tag">GitLab</span>
-                  <span class="tech-tag">Keycloak</span>
+              <div class="resume-skill-group">
+                <h4>Data & Security</h4>
+                <div class="resume-tags">
+                  <span>PostgreSQL</span><span>MySQL</span><span>Flyway</span><span>Redis</span><span>Keycloak</span><span>OAuth2/JWT</span><span>Spring Security</span>
                 </div>
               </div>
-            </div>
-            
-            <div class="resume-item interactive-card" onclick="toggleExpand(this)">
-              <h4>Web Application Developer Intern</h4>
-              <h5>07/2024 - 09/2024</h5>
-              <p><em>OFPPT</em></p>
-              <div class="expandable-content" style="display: none;">
-                <ul>
-                  <li>Design and development of a web application using Spring Boot for the backend and React for the frontend</li>
-                  <li>Management of MySQL database to store and retrieve user data</li>
-                  <li>Collaboration with the technical team to improve features and optimize the user interface</li>
-                </ul>
-                <div class="mt-2">
-                  <span class="tech-tag">React</span>
-                  <span class="tech-tag">Spring Boot</span>
-                  <span class="tech-tag">MySQL</span>
-                  <span class="tech-tag">REST API</span>
+              <div class="resume-skill-group">
+                <h4>AI & Quality</h4>
+                <div class="resume-tags">
+                  <span>LLM</span><span>RAG</span><span>Embeddings</span><span>Ollama</span><span>Gemini</span><span>Groq</span><span>Docker</span><span>Prometheus</span><span>Testcontainers</span><span>k6</span>
                 </div>
               </div>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item interactive-card" onclick="toggleExpand(this)">
-              <h4>Observation Internship</h4>
-              <h5>06/2023 - 07/2023</h5>
-              <p><em>OFPPT</em></p>
-              <div class="expandable-content" style="display: none;">
-                <ul>
-                  <li>Discovery of the functioning of a professional environment in the field of computer development</li>
-                  <li>Observation of the processes of design, development and maintenance of computer applications</li>
-                  <li>Familiarization with the tools and technologies used</li>
-                </ul>
+              <div class="resume-skill-group">
+                <h4>Frontend</h4>
+                <div class="resume-tags">
+                  <span>Angular</span><span>React</span><span>HTML</span><span>CSS</span><span>REST API integration</span>
+                </div>
               </div>
-            </div><!-- End Resume Item -->
+            </section>
 
-            <h3 class="resume-title">Key Achievements</h3>
-            <div class="resume-item interactive-card">
-              <ul>
+            <section class="resume-panel">
+              <h3>Education</h3>
+              <div class="resume-mini-item">
+                <span>September 2025</span>
+                <strong>Master's Degree in Computer Engineering, MIAGE option</strong>
+                <p>EMSI, Casablanca</p>
+              </div>
+              <div class="resume-mini-item">
+                <span>September 2025</span>
+                <strong>Master's Degree in Applied Artificial Intelligence</strong>
+                <p>Université Côte d'Azur, France</p>
+              </div>
+              <div class="resume-mini-item">
+                <span>2020</span>
+                <strong>Baccalaureate: Physical Sciences</strong>
+                <p>Lycée Yassamine, Californie</p>
+              </div>
+            </section>
+          </aside>
+
+          <div class="resume-main">
+            <section class="resume-panel resume-summary">
+              <h3>Profile</h3>
+              <p>
+                Backend & AI Developer specialized in Java, Spring Boot, PostgreSQL, and AI module integration.
+                I design reliable, secure, and maintainable backend systems, from REST API architecture and
+                database modeling to authentication, performance optimization, and deployment support.
+              </p>
+            </section>
+
+            <section class="resume-panel">
+              <h3>Professional Experience</h3>
+              <div class="resume-timeline">
+                <article>
+                  <span>November 2025 - Present</span>
+                  <h4>Backend & AI Engineer - Koog</h4>
+                  <ul>
+                    <li>Built the backend foundation of a travel booking platform as the main backend reference within a team of 5 people.</li>
+                    <li>Designed REST APIs and a PostgreSQL/JPA architecture covering users, listings, calendar, booking, payment, hotel, messaging, and notification modules.</li>
+                    <li>Implemented a reliable booking engine with availability management, pricing, payments, expirations, cancellations, refunds, and double-booking prevention.</li>
+                    <li>Integrated Keycloak/OAuth2/JWT authentication, Koogy AI powered by LLM/RAG, Redis, caching, Prometheus/Actuator observability, and k6/Testcontainers testing.</li>
+                  </ul>
+                </article>
+                <article>
+                  <span>March 2025 - September 2025</span>
+                  <h4>Full-Stack Developer Intern - Marsa Maroc</h4>
+                  <ul>
+                    <li>Designed and optimized a port call management application to improve administration and operational efficiency.</li>
+                    <li>Developed modules for ports, terminals, vessels, goods, and arrival notices, including status management and business rules.</li>
+                    <li>Integrated an analytics dashboard, a chatbot, and secure authentication using Keycloak.</li>
+                  </ul>
+                </article>
+                <article>
+                  <span>July 2024 - September 2024</span>
+                  <h4>Web Application Developer Intern - OFPPT</h4>
+                  <ul>
+                    <li>Designed and developed a web application using Spring Boot for the backend and React for the frontend.</li>
+                    <li>Managed a MySQL database to store and retrieve user data.</li>
+                    <li>Collaborated with the technical team to improve features and optimize the user interface.</li>
+                  </ul>
+                </article>
+                <article>
+                  <span>June 2023 - July 2023</span>
+                  <h4>Observation Internship - OFPPT</h4>
+                  <ul>
+                    <li>Observed software design, development, maintenance, tooling, and professional development workflows.</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="resume-panel">
+              <h3>Key Achievements</h3>
+              <ul class="resume-list">
                 <li>Built Koog's backend foundation around booking, payment, hotel, messaging, and notification modules.</li>
                 <li>Developed a reliable booking engine with availability, payment handling, and double-booking prevention.</li>
                 <li>Secured frontend/backend flows with Keycloak, OAuth2/JWT, and Spring Security.</li>
                 <li>Developed Koogy, an LLM/RAG-based AI module with multilingual support including Moroccan Darija.</li>
               </ul>
-            </div><!-- End Resume Item -->
+            </section>
 
-            <h3 class="resume-title">Certifications</h3>
-            <div class="resume-item interactive-card">
-              <div class="accordion" id="certificationsAccordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                      Introduction to Big Data with Spark and Hadoop
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
-                    <div class="accordion-body">
-                      Completed comprehensive training on processing large datasets using Spark and Hadoop ecosystems.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                      Introduction to Git and GitHub
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
-                    <div class="accordion-body">
-                      Mastered version control concepts and collaborative development workflows using Git and GitHub.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                      Virtual Networks in Azure
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
-                    <div class="accordion-body">
-                      Gained expertise in designing and implementing virtual networks in Microsoft Azure cloud environment.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
-                      IBM - AI Engineering Professional Certificate, 2025
-                    </button>
-                  </h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
-                    <div class="accordion-body">
-                      Professional AI engineering certification from IBM.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
-                      AWS - Certified Machine Learning - Specialty, 2025
-                    </button>
-                  </h2>
-                  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#certificationsAccordion">
-                    <div class="accordion-body">
-                      Machine learning certification focused on AWS ML services and production use cases.
-                    </div>
-                  </div>
-                </div>
+            <section class="resume-panel">
+              <h3>Certifications</h3>
+              <div class="resume-cert-grid">
+                <span>IBM - AI Engineering Professional Certificate, 2025</span>
+                <span>AWS - Certified Machine Learning - Specialty, 2025</span>
+                <span>DeepLearning.AI - Machine Learning in Production, 2025</span>
+                <span>IBM - Machine Learning with Python, 2024</span>
+                <span>Google Cloud - Building Scalable Java Microservices with Spring Boot and Spring Cloud, 2024</span>
+                <span>Introduction to Big Data with Spark and Hadoop</span>
+                <span>Introduction to Git and GitHub</span>
+                <span>Virtual Networks in Azure</span>
+                <span>Capstone: Retrieving, Processing, and Visualizing Data with Python</span>
+                <span>Using Python to Access Web Data</span>
               </div>
-              <div class="expandable-content">
-                <ul>
-                  <li>IBM - AI Engineering Professional Certificate, 2025</li>
-                  <li>AWS - Certified Machine Learning - Specialty, 2025</li>
-                  <li>DeepLearning.AI - Machine Learning in Production, 2025</li>
-                  <li>IBM - Machine Learning with Python, 2024</li>
-                  <li>Google Cloud - Building Scalable Java Microservices with Spring Boot and Spring Cloud, 2024</li>
-                  <li>Introduction to Big Data with Spark and Hadoop</li>
-                  <li>Introduction to Git and GitHub</li>
-                  <li>Virtual Networks in Azure</li>
-                  <li>Capstone: Retrieving, Processing, and Visualizing Data with Python</li>
-                  <li>Using Python to Access Web Data</li>
-                </ul>
-              </div>
-            </div><!-- End Resume Item -->
-
+            </section>
           </div>
-
         </div>
-
       </div>
-
-    </section><!-- /Resume Section -->
+    </section>
 
   </main>
 
@@ -496,52 +254,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script>
-    // Interactive elements functionality
-    document.addEventListener('DOMContentLoaded', function() {
-      // Animate skill bars
-      const skillBars = document.querySelectorAll('.skill-progress');
-      skillBars.forEach(bar => {
-        const width = bar.getAttribute('data-width');
-        bar.style.width = width + '%';
-      });
-      
-      // Initialize tooltips
-      const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-      tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
-      });
-    });
-    
-    // Toggle expandable content
-    function toggleExpand(element) {
-      const content = element.querySelector('.expandable-content');
-      if (content.style.display === 'none') {
-        content.style.display = 'block';
-        element.classList.add('expanded');
-      } else {
-        content.style.display = 'none';
-        element.classList.remove('expanded');
-      }
-    }
-    
-    // Tab functionality
-    function openTab(evt, tabName) {
-      const tabContents = document.getElementsByClassName('tab-content');
-      for (let i = 0; i < tabContents.length; i++) {
-        tabContents[i].classList.remove('active');
-      }
-      
-      const tabButtons = document.getElementsByClassName('tab-button');
-      for (let i = 0; i < tabButtons.length; i++) {
-        tabButtons[i].classList.remove('active');
-      }
-      
-      document.getElementById(tabName).classList.add('active');
-      evt.currentTarget.classList.add('active');
-    }
-  </script>
 
 </body>
 

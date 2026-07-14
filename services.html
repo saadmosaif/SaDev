@@ -24,20 +24,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- GSAP Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Kelly
-  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="services-page">
@@ -46,6 +34,7 @@
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/apple-touch-icon.png" alt="SaDev logo">
         <h1 class="sitename">SaDev</h1>
       </a>
 
@@ -53,8 +42,8 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="resume.html" >Resume</a></li>
-          <li><a href="services.html"class="active">Services</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -71,93 +60,96 @@
 
   <main class="main">
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>My Services</h2>
-        <p>I help teams build secure backend systems, AI modules, APIs, dashboards, and production-ready digital products.</p>
-      </div><!-- End Section Title -->
-
+    <section id="services" class="services-modern section">
       <div class="container">
-        <div class="row gy-4">
-
-          <!-- Service 1 -->
-          <div class="col-lg-4 col-md-6 service-card" data-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <div class="icon"><i class="bi bi-code-slash"></i></div>
-              <h3>Backend Development</h3>
-              <p>Design and development of secure REST APIs, business logic, booking flows, and maintainable Spring Boot services.</p>
-              <div class="service-hover-content">
-                <a href="#" class="btn btn-sm btn-outline-light">Learn More</a>
-              </div>
-            </div>
+        <div class="services-hero">
+          <div>
+            <span>Services</span>
+            <h2>Backend, AI, and security work for products that need to hold up.</h2>
           </div>
+          <p>I help teams turn complex business rules into stable APIs, secure flows, observable systems, and useful AI modules.</p>
+        </div>
 
-          <!-- Service 2 -->
-          <div class="col-lg-4 col-md-6 service-card" data-delay="200">
-            <div class="service-item item-orange position-relative">
-              <div class="icon"><i class="bi bi-cpu"></i></div>
-              <h3>AI Integration</h3>
-              <p>Implementation of LLM/RAG modules, chatbots, embeddings, prompt workflows, and AI features inside real products.</p>
-              <div class="service-hover-content">
-                <a href="#" class="btn btn-sm btn-outline-light">Learn More</a>
-              </div>
-            </div>
-          </div>
+        <div class="services-grid">
+          <article class="service-offer primary-offer">
+            <i class="bi bi-braces"></i>
+            <span>01</span>
+            <h3>Backend Development</h3>
+            <p>Secure REST APIs, business logic, booking flows, payment-aware modules, and maintainable Spring Boot services.</p>
+            <ul>
+              <li>Java 21 / Spring Boot</li>
+              <li>JPA / Hibernate</li>
+              <li>REST API design</li>
+            </ul>
+          </article>
 
-          <!-- Service 3 -->
-          <div class="col-lg-4 col-md-6 service-card" data-delay="300">
-            <div class="service-item item-teal position-relative">
-              <div class="icon"><i class="bi bi-cloud-upload"></i></div>
-              <h3>Deployment & Observability</h3>
-              <p>Docker-based deployment support, CI/CD setup, monitoring with Prometheus/Actuator, and performance checks.</p>
-              <div class="service-hover-content">
-                <a href="#" class="btn btn-sm btn-outline-light">Learn More</a>
-              </div>
-            </div>
-          </div>
+          <article class="service-offer">
+            <i class="bi bi-cpu"></i>
+            <span>02</span>
+            <h3>AI Integration</h3>
+            <p>LLM/RAG modules, chatbots, embeddings, prompt workflows, multilingual AI assistants, and AI features inside existing products.</p>
+            <ul>
+              <li>LLM / RAG</li>
+              <li>Ollama / Gemini / Groq</li>
+              <li>Prompt engineering</li>
+            </ul>
+          </article>
 
-          <!-- Service 4 -->
-          <div class="col-lg-4 col-md-6 service-card" data-delay="400">
-            <div class="service-item item-red position-relative">
-              <div class="icon"><i class="bi bi-diagram-3"></i></div>
-              <h3>Software Architecture</h3>
-              <p>PostgreSQL modeling, API boundaries, caching strategy, authentication flows, and scalable backend architecture.</p>
-              <div class="service-hover-content">
-                <a href="#" class="btn btn-sm btn-outline-light">Learn More</a>
-              </div>
-            </div>
-          </div>
+          <article class="service-offer">
+            <i class="bi bi-database"></i>
+            <span>03</span>
+            <h3>Data Architecture</h3>
+            <p>PostgreSQL modeling, SQL design, Flyway migrations, Redis caching, query performance, and data integrity rules.</p>
+            <ul>
+              <li>PostgreSQL / MySQL</li>
+              <li>Flyway migrations</li>
+              <li>Redis caching</li>
+            </ul>
+          </article>
 
-          <!-- Service 5 -->
-          <div class="col-lg-4 col-md-6 service-card" data-delay="500">
-            <div class="service-item item-indigo position-relative">
-              <div class="icon"><i class="bi bi-shield-lock"></i></div>
-              <h3>Authentication & Security</h3>
-              <p>Keycloak, OAuth2/JWT, Spring Security, roles, permissions, and secure frontend/backend integration.</p>
-              <div class="service-hover-content">
-                <a href="#" class="btn btn-sm btn-outline-light">Learn More</a>
-              </div>
-            </div>
-          </div>
+          <article class="service-offer dark-offer">
+            <i class="bi bi-shield-lock"></i>
+            <span>04</span>
+            <h3>Authentication & Security</h3>
+            <p>Keycloak, OAuth2/JWT, Spring Security, roles, permissions, and secure frontend/backend integration.</p>
+            <ul>
+              <li>Keycloak</li>
+              <li>OAuth2 / JWT</li>
+              <li>RBAC flows</li>
+            </ul>
+          </article>
 
-          <!-- Service 6 -->
-          <div class="col-lg-4 col-md-6 service-card" data-delay="600">
-            <div class="service-item item-pink position-relative">
-              <div class="icon"><i class="bi bi-megaphone"></i></div>
-              <h3>Technical Coaching</h3>
-              <p>1-on-1 coaching for students or professionals seeking to upgrade their backend, Spring Boot, database, or AI skills.</p>
-              <div class="service-hover-content">
-                <a href="#" class="btn btn-sm btn-outline-light">Learn More</a>
-              </div>
-            </div>
-          </div>
+          <article class="service-offer">
+            <i class="bi bi-activity"></i>
+            <span>05</span>
+            <h3>Deployment & Observability</h3>
+            <p>Docker-based deployment support, health checks, Prometheus/Actuator monitoring, load testing, and production readiness.</p>
+            <ul>
+              <li>Docker</li>
+              <li>Prometheus / Actuator</li>
+              <li>k6 / Testcontainers</li>
+            </ul>
+          </article>
 
+          <article class="service-offer accent-offer">
+            <i class="bi bi-megaphone"></i>
+            <span>06</span>
+            <h3>Technical Coaching</h3>
+            <p>Practical coaching for backend, Spring Boot, database design, API architecture, Git workflows, and AI engineering skills.</p>
+            <ul>
+              <li>Code reviews</li>
+              <li>Architecture guidance</li>
+              <li>Learning plans</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="services-cta">
+          <h3>Need a backend that can carry real business rules?</h3>
+          <a href="contact.html">Start a Project</a>
         </div>
       </div>
-    </section><!-- /Services Section -->
+    </section>
 
   </main>
 
@@ -197,114 +189,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <!-- Custom GSAP Animations for Services Section -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Register ScrollTrigger plugin
-      gsap.registerPlugin(ScrollTrigger);
-      
-      // Animate service cards on scroll
-      gsap.utils.toArray('.service-card').forEach((card, index) => {
-        const delay = card.getAttribute('data-delay') || 100;
-        
-        // Set initial state (hidden)
-        gsap.set(card, {
-          y: 50,
-          opacity: 0
-        });
-        
-        // Create animation timeline
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: card,
-            start: "top 80%",
-            toggleActions: "play none none none"
-          }
-        });
-        
-        // Add animations to timeline
-        tl.to(card, {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          ease: "power2.out",
-          delay: index * 0.1
-        });
-        
-        // Hover animations
-        const serviceItem = card.querySelector('.service-item');
-        
-        card.addEventListener('mouseenter', () => {
-          gsap.to(serviceItem, {
-            y: -10,
-            duration: 0.3,
-            ease: "power2.out"
-          });
-          
-          gsap.to(card.querySelector('.icon i'), {
-            scale: 1.2,
-            duration: 0.3,
-            ease: "power2.out"
-          });
-          
-          gsap.to(card.querySelector('.service-hover-content'), {
-            opacity: 1,
-            y: 0,
-            duration: 0.3,
-            ease: "power2.out"
-          });
-        });
-        
-        card.addEventListener('mouseleave', () => {
-          gsap.to(serviceItem, {
-            y: 0,
-            duration: 0.3,
-            ease: "power2.out"
-          });
-          
-          gsap.to(card.querySelector('.icon i'), {
-            scale: 1,
-            duration: 0.3,
-            ease: "power2.out"
-          });
-          
-          gsap.to(card.querySelector('.service-hover-content'), {
-            opacity: 0,
-            y: 20,
-            duration: 0.3,
-            ease: "power2.out"
-          });
-        });
-      });
-      
-      // Animate section title
-      gsap.from('.section-title h2', {
-        scrollTrigger: {
-          trigger: '#services',
-          start: "top 80%",
-          toggleActions: "play none none none"
-        },
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-        ease: "power2.out"
-      });
-      
-      gsap.from('.section-title p', {
-        scrollTrigger: {
-          trigger: '#services',
-          start: "top 80%",
-          toggleActions: "play none none none"
-        },
-        y: 30,
-        opacity: 0,
-        duration: 0.8,
-        delay: 0.2,
-        ease: "power2.out"
-      });
-    });
-  </script>
 
 </body>
 
